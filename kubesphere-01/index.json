@@ -1,26 +1,28 @@
 {
-    "title": "Creating Your First Katacoda Scenario",
-    "description": "Learn how to create your first Katacoda scenario",
+    "title": "kubesphere1",
+    "description": "learn kubesphere",
+    "difficulty": "Intermediate",
+    "time": "60",
     "details": {
       "steps": [
         {
-          "title": "Step 1 - Scenario Structure",
+          "title": "Step 1",
           "text": "step1.md"
         },
         {
-          "title": "Step 2 - Scenario Syntax",
+          "title": "Step 2",
           "text": "step2.md"
         },
         {
-          "title": "Step 3 - CLI",
+          "title": "Step 3",
           "text": "step3.md"
         },
         {
-          "title": "Step 4 - VS Code Extension",
+          "title": "Step 4",
           "text": "step4.md"
         },
         {
-          "title": "Step 5 - WebHooks",
+          "title": "Step 5",
           "text": "step5.md"
         }
       ],
@@ -32,7 +34,7 @@
       }
     },
     "environment": {
-      "uilayout": "editor-terminal"
+      "uilayout": "terminal-terminal"
     },
     "backend": {
       "imageid": "kubernetes-cluster-running:1.18"

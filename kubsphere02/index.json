@@ -12,10 +12,6 @@
       {
         "title": "Step-2 Deploy KubeSphere",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {

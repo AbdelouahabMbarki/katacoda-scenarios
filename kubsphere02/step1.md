@@ -32,4 +32,5 @@ helm install openebs --namespace openebs openebs/openebs --wait
 `kubectl patch storageclasses.storage.k8s.io openebs-hostpath -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'`{{execute}}
 
 6.Check if there is a default Storage Class in your cluster.`kubectl get sc`{{execute}} 
+
 If your Kubernetes cluster environment meets all requirements mentioned above, then you can start to install KubeSphere.

@@ -1,6 +1,6 @@
 ### Minimal Installation
 
-1.Intastall kubesphere ks-installer.
+1.Install kubesphere ks-installer.
 ```
 kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.1.1/kubesphere-installer.yaml
 kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.1.1/cluster-configuration.yaml

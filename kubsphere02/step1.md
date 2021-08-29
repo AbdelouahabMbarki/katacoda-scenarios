@@ -27,7 +27,9 @@ kubectl create namespace openebs
 helm repo add openebs https://openebs.github.io/charts
 helm repo update
 helm install openebs --namespace openebs openebs/openebs --wait 
-```
-{{execute}}
+```{{execute}}
 
-5.set  openebs as  a default storage Class for the clusterIf your Kubernetes cluster environment meets all requirements mentioned above, then you can start to install KubeSphere.
+5.set  openebs as  a default storage Class for the cluster
+`kubectl patch storageclasses.storage.k8s.io openebs-hostpath -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'`{{execute}}
+
+If your Kubernetes cluster environment meets all requirements mentioned above, then you can start to install KubeSphere.

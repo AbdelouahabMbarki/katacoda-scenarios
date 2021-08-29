@@ -14,5 +14,5 @@ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3
 kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l app=ks-install -o jsonpath='{.items[0].metadata.name}') -f
 ```{{execute}}
 
-4.When all Pods of KubeSphere are running, it means the installation is successful. Check the port (30880 by default) of the console service by the following command. Then you can acces [the console](https://[[HOST2_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com) with the default account `admin/P@88w0rd`.
+4.When all Pods of KubeSphere are running, it means the installation is successful. Check the port (30880 by default) of the console service by the following command. Then you can acces [the console](https://[[HOST2_SUBDOMAIN]]-30880-[[KATACODA_HOST]].environments.katacoda.com) with the default account `admin/P@88w0rd`.
 

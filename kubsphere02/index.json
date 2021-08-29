@@ -44,7 +44,7 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
       "assets": {
         "host01": [
             {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"}

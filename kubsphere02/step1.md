@@ -6,15 +6,14 @@ In addition to supporting deploying on VM and BM, KubeSphere also supports insta
 > - CPU > 1 Core, Memory > 2 G;
 > - An existing default Storage Class in your Kubernetes clusters.
 
-1. Make sure your Kubernetes version is compatible by running `kubectl version` in your cluster node.
+1.Make sure your Kubernetes version is compatible by running `kubectl version` in your cluster node.
 `kubectl version`{{execute}}
 
 2.Check if the available resources meet the minimal prerequisite in your cluster.
-`kubectl describe nodes/node01 | grep --color=always  "memory:" | tail -1`{{execute}}
+`kubectl describe nodes/node01 | grep --color=always  "memory:" | tail `{{execute}}
 
-3. Check if there is a default Storage Class in your cluster. An existing Storage Class is the prerequisite for KubeSphere installation.
+3.Check if there is a default Storage Class in your cluster. An existing Storage Class is the prerequisite for KubeSphere installation. 
 `kubectl get sc`{{execute}}
-
 No storage Class found in the cluster
 ```bash
 controlplane $ kubectl get sc 

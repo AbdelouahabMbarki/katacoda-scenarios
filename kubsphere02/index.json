@@ -47,7 +47,7 @@
     }
       "assets": {
         "host01": [
-            {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "launch.sh", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
     }
   },

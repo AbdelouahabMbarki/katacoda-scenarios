@@ -10,32 +10,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step-2 Deploy KubeSphere",
         "text": "step2.md"
       },
       {
         "title": "Step 3",
         "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
-      },
-      {
-        "title": "Step 6",
-        "text": "step6.md"
-      },
-      {
-        "title": "Step 7",
-        "text": "step7.md"
-      },
-      {
-        "title": "Step 8",
-        "text": "step8.md"
       }
     ],
     "intro": {
@@ -52,6 +32,8 @@
     }
   },
    "environment": {
+      "showdashboard": true,
+      "dashboards": [{"name": "KubeSphere", "href": "https://[[HOST2_SUBDOMAIN]]-30880-[[KATACODA_HOST]].environments.katacoda.com"}],
       "uilayout": "terminal"
     },
   "backend": {

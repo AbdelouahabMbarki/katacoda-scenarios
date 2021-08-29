@@ -7,18 +7,19 @@ In addition to supporting deploying on VM and BM, KubeSphere also supports insta
 > - An existing default Storage Class in your Kubernetes clusters.
 
 1.Make sure your Kubernetes version is compatible by running `kubectl version`{{execute}} in your cluster node.
-> Note: Pay attention to `Server Version` line, if `GitVersion` is greater than `v1.17.0`, it's good to go
+> Pay attention to `Server Version` line, if `GitVersion` is greater than `v1.17.0`, it's good to go
 
 2.Check if the available resources meet the minimal prerequisite in your cluster.
 `kubectl describe nodes/node01 | grep --color=always  "memory:" | tail -1 `{{execute}}
 
 3.Check if there is a default Storage Class in your cluster.`kubectl get sc`{{execute}} 
 
-> Note: No storage Class found in the cluster
-  ```bash
-  controlplane $ kubectl get sc 
-  No resources found in default namespace.
-  ```
+> No storage Class found in the cluster
+
+```bash
+controlplane $ kubectl get sc 
+No resources found in default namespace.
+```
 
 4.install openebs storage Class in the cluster  
 ```

@@ -10,12 +10,11 @@ In addition to supporting deploying on VM and BM, KubeSphere also supports insta
 > Note: Pay attention to `Server Version` line, if `GitVersion` is greater than `v1.17.0`, it's good to go
 
 2.Check if the available resources meet the minimal prerequisite in your cluster.
-`kubectl describe nodes/node01 | grep --color=always  "memory:" | tail `{{execute}}
+`kubectl describe nodes/node01 | grep --color=always  "memory:" | tail -1 `{{execute}}
 
-3.Check if there is a default Storage Class in your cluster. An existing Storage Class is the prerequisite for KubeSphere installation. 
-`kubectl get sc`{{execute}}
+3.Check if there is a default Storage Class in your cluster.`kubectl get sc`{{execute}} 
 
-  No storage Class found in the cluster
+> Note: No storage Class found in the cluster
   ```bash
   controlplane $ kubectl get sc 
   No resources found in default namespace.
@@ -32,4 +31,5 @@ helm install openebs --namespace openebs openebs/openebs --wait
 5.set  openebs as  a default storage Class for the cluster
 `kubectl patch storageclasses.storage.k8s.io openebs-hostpath -p '{"metadata": {"annotations":{"storageclass.kubernetes.io/is-default-class":"true"}}}'`{{execute}}
 
+6.Check if there is a default Storage Class in your cluster.`kubectl get sc`{{execute}} 
 If your Kubernetes cluster environment meets all requirements mentioned above, then you can start to install KubeSphere.
